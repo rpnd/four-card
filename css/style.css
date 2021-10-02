@@ -1,0 +1,165 @@
+/* CSS RESET*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsla(228, 6%, 66%, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0rem 6rem 0rem;
+}
+
+a {
+  font-style: italic;
+
+  color: hsl(34, 97%, 64%);
+}
+
+footer {
+  padding-top: 6rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* HEADER*/
+.header {
+  font-weight: 200;
+  font-size: 2.4rem;
+  width: 30rem;
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+
+.header-bold {
+  font-weight: 600;
+}
+
+.copy-text {
+  color: hsl(229, 6%, 66%);
+  width: 30rem;
+  text-align: center;
+  padding: 1.5rem 0 6rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* CARDS*/
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  width: 31.5rem;
+  height: 25rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 1.3rem 1.5rem 0 rgba(216, 226, 236, 0.7);
+}
+
+.feature-card::before {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feature-card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card__container--middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-team::before {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.feature-supervisor::before {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.feature-karma::before {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.feature-calculator::before {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.feature-calculator {
+  margin-bottom: 0;
+}
+
+.feature-card__img {
+  width: 6.4rem;
+  align-self: flex-end;
+}
+
+.feature-card__title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: hsl(234, 12%, 34%);
+  font-size: 2rem;
+}
+
+.feature-card__text {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    font-size: 1.6rem;
+  }
+
+  .feature-card {
+    border-radius: 5px;
+    width: 35rem;
+  }
+
+  .feature-card__container--middle {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .feature-card__container {
+    flex-direction: row;
+  }
+
+  .header {
+    font-size: 3.6rem;
+    width: 500px;
+  }
+
+  .copy-text {
+    font-size: 1.5rem;
+    width: 50rem;
+  }
+
+  .feature-card__text {
+    font-size: 1.3rem;
+  }
+}
